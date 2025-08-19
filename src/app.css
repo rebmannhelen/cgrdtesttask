@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+.background {
+    background-image: url(./waves.svg);
+}
+
+.content {
+    @apply grid grid-cols-1 items-center ml-125 mr-125;
+}
+
+.logo {
+    @apply flex justify-center py-10;
+}
+
+.input {
+    @apply p-2 rounded-sm border-[1px] border-[#F7F7F7] placeholder-[#95A4BB] focus:outline-none;
+}
+
+.button {
+    background-color: #16396B;
+    @apply w-full p-2 rounded-sm text-white;
+}
+
+.error-message {
+    @apply py-4 border-[1px] border-[#FFC7C7] text-[#FFC7C7] bg-[#FFF0F0] text-center
+}
+
+.success-message {
+    @apply py-4 border-[1px] border-[#EBFFD8] text-[#76B13A] bg-[#F6FFF0] text-center
+}
+
+.subheading {
+    @apply font-bold text-[#16396B]
+}
+
+.newsbox {
+    @apply flex justify-between items-center border-[1px] border-[#F7F7F7] p-2 rounded-sm text-[#16396B];
+}
+
+.iconbar {
+    @apply flex justify-end gap-2
+}
+
+.icon {
+    @apply size-3
+}
