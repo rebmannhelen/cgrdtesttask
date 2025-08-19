@@ -11,6 +11,9 @@ const config = {
 		adapter: adapter({
 			fallback: '404.html'
 		}),
+		prerender: {
+			entries: ['*'] // prerender all pages
+		},
 		paths: {
 			base: process.argv.includes('dev') ? '' : '/cgrdtesttask'
 		}
