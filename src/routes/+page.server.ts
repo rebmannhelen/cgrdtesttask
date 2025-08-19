@@ -1,11 +1,14 @@
 import mongoose from 'mongoose';
 
+/*
 const cgrdTestTask = await connectToDatabase();
 const newsposts = await connectToCollection(cgrdTestTask);
+*/
 
 // Page load
 export const load = async () => {
 	let newsfeed = [];
+	/*
 
 	let news = await newsposts.find();
 	news.forEach((newspost) => {
@@ -14,7 +17,8 @@ export const load = async () => {
 			title: newspost.title,
 			description: newspost.description
 		});
-	});
+	});*/
+
 	return { news: newsfeed };
 };
 
