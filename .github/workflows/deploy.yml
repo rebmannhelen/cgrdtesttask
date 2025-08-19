@@ -29,7 +29,7 @@ jobs:
 
       - name: Build
         env:
-          BASE_PATH: '/cgrdtesttask'
+          BASE_PATH: ''
         run: npm run build
 
       - name: Upload Artifacts
