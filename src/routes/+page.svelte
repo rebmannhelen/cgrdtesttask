@@ -1,5 +1,5 @@
 <script lang="ts">
-	/*
+	
 	import Login from './components/login.svelte';
 	import Newsfeed from './components/newsfeed.svelte';
 
@@ -13,12 +13,13 @@
 	$: {
 		if (form?.validUser == false) falseAttempt = true;
 		if (form?.validUser == true) login = true;
-		if (form?.logout == true) login = false;
+		if (form?.logout == true) {
+			login = false;
+			falseAttempt = false
+		}
 	}
-		*/
+		
 </script>
-
-<!--
 	<div class="background">
 		<div class="content">
 			<div class="logo">
@@ -31,6 +32,3 @@
 			{/if}
 		</div>
 	</div>
--->
-
-<div>Kann ich gefunden werden? </div>
